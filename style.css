@@ -828,12 +828,28 @@ footer {
 
 /* 13" 1024 x 800 */
 @media screen and (max-width: 1025px) and (min-width: 1023px) and (min-height: 799px) {
- 
+   .hero {
+      height: 80vh;
+}
+    .hero h1 {
+        font-size: 40px;
+    }
+    footer {
+      height: 50vh;
+    }
 }
 
 /* 10" 1024 x 600 */
 @media screen and (max-width: 1025px) and (min-width: 1023px) and (min-height: 799px) {
- 
+   .hero {
+      height: 70vh;
+}
+    .hero h1 {
+font-size: 35px;
+    }
+    footer {
+      height: 40vh;
+    }
 }
 
 /* Apple iPad pro 1366 x 1024 */
@@ -853,7 +869,15 @@ footer {
 
 /* Nexus 9 1024 x 768 */
 @media screen and (max-width: 1025px) and (min-width: 1023px) and (min-height: 767px) {
-  
+  .hero {
+      height: 80vh;
+}
+    .hero h1 {
+        font-size: 30px;
+    }
+    footer {
+      height: 50vh;
+    }
 }
 
 @media screen and (max-width: 780px) and (min-width: 778px) { /* */
@@ -1015,7 +1039,7 @@ footer {
 /* Huawei P8lite */
 @media (max-width: 721px) and (min-width: 719px) and (min-height: 1278px) {
   footer {
-    height: 42vh;
+    height: 50vh;
   }
 }
 
