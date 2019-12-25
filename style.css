@@ -1011,6 +1011,14 @@ footer {
     padding-right: 10px;
   }
 }
+
+/* Huawei P8lite */
+@media (max-width: 721px) and (min-width: 719px) and (min-height: 1278px) {
+  footer {
+    height: 42vh;
+  }
+}
+
 @media (max-width: 721px) and (min-width: 719px) {
   .hero {
     height: 40vh;
