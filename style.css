@@ -832,7 +832,7 @@ footer {
       height: 80vh;
 }
     .hero h1 {
-        font-size: 40px;
+        font-size: 55px;
     }
     footer {
       height: 50vh;
@@ -840,15 +840,15 @@ footer {
 }
 
 /* 10" 1024 x 600 */
-@media screen and (max-width: 1025px) and (min-width: 1023px) and (min-height: 799px) {
+@media screen and (max-width: 1025px) and (min-width: 1023px) and (min-height: 599px) {
    .hero {
       height: 70vh;
 }
     .hero h1 {
-font-size: 35px;
+font-size: 45px;
     }
     footer {
-      height: 40vh;
+      height: 50vh;
     }
 }
 
