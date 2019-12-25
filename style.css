@@ -131,7 +131,7 @@ p {
   align-items: center;
   text-align: center; 
   background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('/img/Optimizedheroportfoliolaptop.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('img/Optimizedheroportfoliolaptop.jpg');
   background-repeat: no-repeat;
   background-position: 50% 23%;
   color: white;
