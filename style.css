@@ -848,7 +848,7 @@ footer {
 font-size: 45px !important;
     }
     footer {
-      height: 50vh !important;
+      height: 95vh !important;
     }
 }
 
@@ -1039,7 +1039,7 @@ font-size: 45px !important;
 /* Huawei P8lite */
 @media (max-width: 721px) and (min-width: 719px) and (min-height: 1278px) {
   footer {
-    height: 50vh;
+    height: 90vh;
   }
 }
 
