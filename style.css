@@ -123,6 +123,8 @@ p {
     color: white;
 }
 
+/* HERO */
+
 .hero {
   width: 100%;
   height:  40vw;
@@ -225,6 +227,9 @@ p {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
+/* SKILLS */
+
 #skills-section {
   margin: 0 10% 0 10%;
   display: flex;
@@ -279,18 +284,10 @@ p {
   padding-bottom: 20px;
 }
 .abilities-all {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 20px;
-}
-.abilities-top {
-  display: flex;
-  flex-direction: row;
-  padding-bottom: 15px;
-}
-.abilities-bottom {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
 }
 .abilities-img {
   text-align: center;
@@ -377,7 +374,7 @@ p {
   display: flex;
   width: 23%;
   height: 20vw;
-  background-image: url('img/Optimizedheroportfoliolaptop.jpg');
+  background-image: url('img/hitlyrics.png');
   background-size: cover;
   background-repeat: no-repeat;
   justify-content: center; 
@@ -416,7 +413,12 @@ p {
 .projects-gap {
   display: none;
 }
-
+#ambition-text {
+  text-align: left;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
 #ambition-text:hover {
   -webkit-animation: fadein 4s;
   -moz-animation: fadein 4s;
@@ -541,7 +543,7 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-  background-color: #0A1624;
+  background-color: #D16933;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -818,7 +820,15 @@ footer {
 
 /* 19" 1440 x 900 */
 @media screen and (max-width: 1441px) and (min-width: 1439px) and (min-height: 899px) {
- 
+  .hero {
+    height: 80vh;
+}
+  .hero h1 {
+      font-size: 55px;
+  }
+  footer {
+    height: 50vh;
+  }
 }
 
 /* 15" 1366 x 768 */
@@ -828,28 +838,41 @@ footer {
 
 /* 13" 1024 x 800 */
 @media screen and (max-width: 1025px) and (min-width: 1023px) and (min-height: 799px) {
-   .hero {
-      height: 80vh;
+  .hero {
+    height: 80vh;
 }
-    .hero h1 {
-        font-size: 55px;
-    }
-    footer {
-      height: 50vh;
-    }
+  .hero h1 {
+      font-size: 55px;
+  }
+  footer {
+    height: 50vh;
+  }
 }
 
 /* 10" 1024 x 600 */
-@media screen and (max-width: 1025px) and (min-width: 1023px) and (min-height: 599px) and (max-height: 601px) {
-   .hero {
-      height: 70vh !important;
+@media screen and (max-width: 1025px) and (min-width: 1023px) and (min-height: 599px) {
+  .hero {
+    height: 70vh !important;
 }
-    .hero h1 {
+  .hero h1 {
 font-size: 45px !important;
-    }
-    footer {
-      height: 70vh !important;
-    }
+  }
+  footer {
+    height: 70vh !important;
+  }
+}
+
+/* rest */
+@media screen and (min-width: 500px) and (max-width: 1200px) {
+  .hero {
+    height: 70vh;
+  }
+  .hero h1 {
+    font-size: 40px;
+  }
+  footer {
+    height: 90vh;
+  }
 }
 
 /* Apple iPad pro 1366 x 1024 */
@@ -870,17 +893,25 @@ font-size: 45px !important;
 /* Nexus 9 1024 x 768 */
 @media screen and (max-width: 1025px) and (min-width: 1023px) and (min-height: 767px) {
   .hero {
-      height: 80vh;
+    height: 80vh;
 }
-    .hero h1 {
-        font-size: 30px;
-    }
-    footer {
-      height: 50vh;
-    }
+  .hero h1 {
+      font-size: 30px;
+  }
+  footer {
+    height: 50vh;
+  }
 }
 
-@media screen and (max-width: 780px) and (min-width: 778px) { /* */
+@media screen and (max-width: 780px) and (min-width: 778px) { 
+  
+}
+
+/* Huawei P8lite */
+@media (max-width: 721px) and (min-width: 719px) and (min-height: 1278px) {
+  footer {
+    height: 70vh;
+  }
 }
 /* iPad */
 @media screen and (max-width: 769px) and (min-width: 767px) { 
@@ -909,14 +940,10 @@ font-size: 45px !important;
     width: 75px;
     height: 75px;
   }
-  .abilities-top {
-    display: flex;
-    flex-direction: column!important;
-  }
-  .abilities-bottom {
-    display: flex;
-    flex-direction: column!important;
-  }
+ .abilities-all {
+   display: flex;
+   flex-direction: column !important;
+ }
   .abilities {
     padding-bottom: 20px;
   }
@@ -1039,10 +1066,9 @@ font-size: 45px !important;
 /* Huawei P8lite */
 @media (max-width: 721px) and (min-width: 719px) and (min-height: 1278px) {
   footer {
-    height: 70vh;
+    height: 42vh;
   }
 }
-
 @media (max-width: 721px) and (min-width: 719px) {
   .hero {
     height: 40vh;
@@ -1263,13 +1289,9 @@ font-size: 45px !important;
     width: 75px;
     height: 75px;
   }
-  .abilities-top {
+  .abilities-all {
     display: flex;
-    flex-direction: column!important;
-  }
-  .abilities-bottom {
-    display: flex;
-    flex-direction: column!important;
+    flex-direction: column !important;
   }
   .abilities {
     padding-bottom: 20px;
@@ -1719,5 +1741,15 @@ font-size: 45px !important;
 @media screen and (max-width: 321px) and (min-width: 319px) {
   footer {
     height: 640px;
+  }
+}
+
+@media (max-width: 800px) {
+  .abilities-all {
+    display: flex;
+    flex-direction: column;
+  }
+  #ambition-text {
+    display: block;
   }
 }
