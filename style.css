@@ -133,7 +133,7 @@ p {
   align-items: center;
   text-align: center; 
   background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('img/Optimizedheroportfoliolaptop.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('img/Optimizedheroportfoliolaptop.jpg');
   background-repeat: no-repeat;
   background-position: 50% 23%;
   color: white;
@@ -149,11 +149,17 @@ p {
   margin-top: 0;
   margin-bottom: 0.5em;
   font-weight: bold;
+   
+}
+.hero-inner-text {
+  background-color: #D16933;
+  padding: 20px 0 20px 0;
+  background: rgba(209, 105, 51, 0.5);
+  border-radius: 4%;
 }
 .hero .btn {
   display: block;
   width: 200px;
-  border: 2px solid white;
   padding: 1em;
   margin-top: 50px;
   margin-left: auto;
@@ -676,7 +682,6 @@ footer {
     width: 80%;
     height: 50vw;
     background-position: bottom;
-    border: 1px solid #D16933;
   }
   .proj-mediator {
     background-position: 0% 50%;
@@ -964,7 +969,6 @@ font-size: 45px !important;
     width: 80%;
     height: 50vw;
     background-position: bottom;
-    border: 1px solid #D16933;
   }
   .proj-mediator {
     background-position: 0% 50%;
@@ -1164,7 +1168,6 @@ font-size: 45px !important;
     width: 80%;
     height: 50vw;
     background-position: bottom;
-    border: 1px solid #D16933;
   }
   .proj-mediator {
     background-position: 0% 50%;
@@ -1313,7 +1316,6 @@ font-size: 45px !important;
     width: 80%;
     height: 50vw;
     background-position: bottom;
-    border: 1px solid #D16933;
   }
   .proj-mediator {
     background-position: 0% 50%;
@@ -1472,7 +1474,6 @@ font-size: 45px !important;
     width: 80%;
     height: 50vw;
     background-position: bottom;
-    border: 1px solid #D16933;
   }
   .proj-mediator {
     background-position: 0% 50%;
@@ -1625,7 +1626,6 @@ font-size: 45px !important;
     width: 80%;
     height: 50vw;
     background-position: bottom;
-    border: 1px solid #D16933;
   }
   .proj-mediator {
     background-position: 0% 50%;
@@ -1750,8 +1750,16 @@ font-size: 45px !important;
   }
   #ambition-text {
     display: block;
+    margin: 0 5% 0 5%;
   }
   #social-footer {
     margin-top: 30px !important;
+  }
+}
+
+@media (min-width: 800px) {
+  .hero-inner-text {
+    margin: 0 18% 0 18%;
+    border-radius: 30px;
   }
 }
