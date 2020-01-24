@@ -461,7 +461,6 @@ p {
 }
 .friend-pic img {
   border-radius: 50%;
-  border: 3px solid #D16933;
 }
 .a-prev-next {
   text-align: center;
@@ -1751,5 +1750,8 @@ font-size: 45px !important;
   }
   #ambition-text {
     display: block;
+  }
+  #social-footer {
+    margin-top: 30px !important;
   }
 }
