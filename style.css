@@ -24,11 +24,14 @@ p {
     z-index: 3; 
   }
 
-  .active {
+  .header-active {
     transition: 0.2s;
     background-color: #00458B !important;
   }
-  
+
+  .menu-active {
+    color: #3FD2C7;
+  }
   
   .header ul {
     margin: 0;
@@ -131,7 +134,7 @@ p {
 
 .hero {
   width: 100%;
-  height:  40vw;
+  height:  47vw;
   display: flex;
   justify-content: center; 
   align-items: center;
@@ -235,10 +238,9 @@ p {
 /* SKILLS */
 
 #skills-section {
-  margin: 0 10% 0 10%;
+  margin: 2em 10% 0 10%;
   display: flex;
   flex-direction: row;
-  padding-bottom: 30px;
 }
 @media (max-width: 377px) {
   .hero {
@@ -268,30 +270,38 @@ p {
   display: flex;
   flex-direction: column;
 }
+.skill-row1 {
+  padding-left: 3%;
+  margin-right: 3%;
+}
+.skill-img {
+  text-align: center;
+}
 .skill {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   padding-top: 10px;
 }
 .skill-text {
-  margin-left: 10px;
+  text-align: center;
 }
-.skill-text h3 {
-  padding-bottom: 10px;
+.skill-text h3{
+  text-align: center;
 }
-
-#abilities-section {
-  padding-top: 20px;
+.after-skills {
+  padding: 2.5em 0 2.5em 0;
 }
+/*ABILITIES SECTION */
 #abilities-section h2 {
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 1.5em;
 }
 .abilities-all {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 10px;
+  margin-bottom: -10px;
 }
 .abilities-img {
   text-align: center;
@@ -303,32 +313,42 @@ p {
 }
 .abilities-c-t-a {
   text-align: center;
-  padding: 30px 0 10px 0;
-}
-
-.after-abilities {
-  padding-top: 40px;
   padding-bottom: 10px;
 }
-
-#contact-info {
-  width: 100%;
+.after-abilities {
+  padding: 2.5em 0 2.5em 0;
 }
-
+/*AMBITION SECTION */
 #ambition-section {
   text-align: center;
 }
 #ambition-section h2 {
-  padding: 20px 0 20px 0;
+  padding: 0 0 2em 0;
 }
-
-#project-section {
-  padding-bottom: 10px;
+#ambition-text {
+  text-align: left;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
 }
+#ambition-text:hover {
+  -webkit-animation: fadein 4s;
+  -moz-animation: fadein 4s;
+  -ms-animation: fadein 4s;
+  -o-animation: fadein 4s;
+  animation: fadein 4s;
+  transition: opacity 4s;
+}
+.ambition-c-t-a {
+  padding: 2em 0 0 0;
+}
+.after-ambitions {
+  margin: 2.5em 0 2.5em 0;
+}
+/*PROJECT SECTION */
 #project-section h2 {
   text-align: center;
-  padding-bottom: 30px;
-  padding-top: 10px;
+  padding-bottom: 1.7em;
 }
 .projects-row {
   display: flex;
@@ -416,20 +436,10 @@ p {
 .projects-gap {
   display: none;
 }
-#ambition-text {
-  text-align: left;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
+.after-project {
+   margin: 2em 0 2em 0;
 }
-#ambition-text:hover {
-  -webkit-animation: fadein 4s;
-  -moz-animation: fadein 4s;
-  -ms-animation: fadein 4s;
-  -o-animation: fadein 4s;
-  animation: fadein 4s;
-  transition: opacity 4s;
-}
+/*TESTEMONIALS */
 @keyframes fadein {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -450,13 +460,11 @@ p {
   from { opacity: 0; }
   to { opacity: 1; }
 }
-.ambition-c-t-a {
-  padding: 40px 0 10px 0;
-}
+
 
 #slideshow-container h2 {
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 2em;
 }
 
 .mySlides .friend-pic, h4, h5 {
@@ -514,7 +522,7 @@ p {
   transition: background-color 0.6s ease;
 }
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #3FD2C7;
 }
 .fade {
   -webkit-animation-name: fade;
@@ -532,7 +540,11 @@ p {
   from {opacity: .4}
   to {opacity: 1}
 }
+.after-say-about-me {
+  margin: 2.5em 0 2.5em 0;
+}
 
+/*CONTACT FORM */
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
@@ -547,30 +559,34 @@ input[type=text], select, textarea {
 input[type=submit] {
   background-color: #3FD2C7;
   color: white;
-  padding: 12px 20px;
+ 
   border: none;
-  border-radius: 4px;
   cursor: pointer;
-}
 
+  width: 75px;
+  height: 25px;
+}
 #contact-info {
-  padding: 30px 0 30px 0;
+  width: 100%;
+  padding-bottom: 3em;
 }
 .contact-container {
   border-radius: 5px;
   background-color: #f2f2f2;
-  padding: 20px;
+  padding-bottom: 2em;
 }
 #contact-info h2 {
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 1.7em;
 }
 
+/*FOOTER */
 footer {
   box-sizing: border-box;
   height:300px;
  /* background: linear-gradient(to left, #00458B, #3FD2C7); */
  background-color: #00458B;
+ padding-bottom: 22em;
 }
 #footer-section {
   height: 100%;
@@ -618,6 +634,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-top: 2em;
 }
 #social-footer img {
   width: 50px;
@@ -632,6 +649,9 @@ footer {
 .footer-ul li a {
   text-decoration: none;
   color: #3FD2C7;
+}
+.copyright {
+  background-color: #00458B;
 }
 
 @media (max-width: 377px) {
@@ -1705,6 +1725,7 @@ font-size: 45px !important;
 /* iphone 6/7/8 */
 @media screen and (max-width: 376px) and (min-width: 373px)
 {
+ 
 }
 /* Blackberry Z30 , Galaxy Note3 3 , Galaxy Note II , Galaxy S III , Microsoft Lumia 950 , Galaxy S5 */
 @media screen and (max-width: 361px) and (min-width: 358px)
@@ -1718,6 +1739,15 @@ font-size: 45px !important;
 }
 
 @media (max-width: 800px) {
+  .skill-top {
+    padding-bottom: 1em;
+  }
+  .skill-img {
+    padding-bottom: 0.5em;
+  }
+  .skill-text h3 {
+    padding-bottom: 0.5em;
+  }
   .abilities-all {
     display: flex;
     flex-direction: column;
@@ -1726,15 +1756,41 @@ font-size: 45px !important;
     display: block;
     margin: 0 5% 0 5%;
   }
-  #social-footer {
-    margin-top: 30px !important;
-  }
+  
   .skill-png {
     width: 25px;
     height: 25px !important;
   }
   .header {
     background-color: #00458B;
+  }
+  .abilities-img {
+    padding-bottom: 1em;
+  }
+  .abilities-c-t-a {
+    padding-top: 2em;
+  }
+  .ambition-section-main {
+    margin-bottom: -1em;
+  }
+  .after-ambitions {
+    margin-bottom: 1em;
+  }
+  .personal-project {
+    margin-bottom: 1em;
+  }
+  .after-project {
+    margin: 0 0 0 0;
+  }
+  #slideshow-container h2 {
+    margin-bottom: 1em;
+  }
+  .after-say-about-me {
+    margin: 3em 0 0.5em 0;
+  }
+  #social-footer {
+    position: relative;
+    padding: 22em 0 0 0;
   }
 }
 
