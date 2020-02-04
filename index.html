@@ -14,11 +14,11 @@
           <input class="menu-btn" type="checkbox" id="menu-btn" />
           <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
           <ul class="menu">
-                <li><a href="#skills-section">Skills</a></li>
-                <li><a href="#abilities-section">Abilities</a></li>
-                <li><a href="#ambition-section">Ambition</a></li>
-                <li><a href="#project-section">Projects</a></li>
-                <li><a href="#contact-info">Contact</a></li>
+                <li><a class="a-nav" href="#skills-section">Skills</a></li>
+                <li><a class="a-nav" href="#abilities-section">Abilities</a></li>
+                <li><a class="a-nav" href="#ambition-section">Ambition</a></li>
+                <li><a class="a-nav" href="#project-section">Projects</a></li>
+                <li><a class="a-nav" href="#contact-info">Contact</a></li>
           </ul>
       </header>
 
@@ -249,13 +249,13 @@
             <section id="contact-info">
                 <h2>Contact me</h2>
                 <div class="contact-container">
-                    <form method="post" action="action_page.php">
+                    <form method="POST" action="https://formspree.io/xknrnazp">
 
                         <label for="firstname">Name</label>
                         <input type="text" id="name" name="name" placeholder="Your full name is...">
 
                         <label for="mail">E-mail</label>
-                        <input type="text" id="mail" name="mail" placeholder="Your e-mail is...">
+                        <input type="text" id="mail" name="_replyto" placeholder="Your e-mail is...">
 
                         <label for="subject">Subject</label>
                         <input type="text" id="subject" name="subject" placeholder="Subject">
@@ -267,7 +267,7 @@
                                     style="height: 200px">
                         </textarea>
 
-                        <input type="submit" value="Submit">
+                        <input type="submit" value="Send" onclick="alertFunc()">
                     </form>
                 </div>
             </section>
@@ -365,6 +365,18 @@
           dots[slideIndex-1].className += " active";
         }
         showSlides();
+
+        function alertFunc() {
+            return alert('This website does not have backend, for submitting the form I use Formspree.io. It is absolutely secure! Thanks for messaging me!')
+        }
+
+        /*SMOOTH SCROLL
+        const id = 'anchorName2';
+const yourElement = document.getElementById(id);
+const y = yourElement.getBoundingClientRect().top + window.pageYOffset;
+
+window.scrollTo({top: y, behavior: 'smooth'});
+*/
     </script>
 </body>
 </html>

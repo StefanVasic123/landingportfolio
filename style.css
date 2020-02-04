@@ -235,6 +235,10 @@ p {
   padding-bottom: 30px;
 }
 
+.a-nav {
+  transform: 0.5s;
+}
+
 /* SKILLS */
 
 #skills-section {
@@ -652,6 +656,7 @@ footer {
 }
 .copyright {
   background-color: #00458B;
+  padding-right: 10%;
 }
 
 @media (max-width: 377px) {
