@@ -359,6 +359,12 @@ p {
   flex-direction: row;
   justify-content: space-between;
 }
+.projects-row-1 {
+  margin-top: 1.7em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .proj-mediator {
   display: flex;
   width: 23%;
@@ -403,6 +409,32 @@ p {
   width: 23%;
   height: 20vw;
   background-image: url('img/hitlyrics.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center; 
+  align-items: center;
+  text-align: center; 
+  margin: 0;
+  border: 2px solid #00458B;
+}
+.proj-checkpointz {
+  display: flex;
+  width: 23%;
+  height: 20vw;
+  background-image: url('img/gdezablejati.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center; 
+  align-items: center;
+  text-align: center; 
+  margin: 0;
+  border: 2px solid #00458B;
+}
+.proj-onlineposlovanje {
+  display: flex;
+  width: 23%;
+  height: 20vw;
+  background-image: url('img/onlineposlovanje.png');
   background-size: cover;
   background-repeat: no-repeat;
   justify-content: center; 
