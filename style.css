@@ -729,6 +729,10 @@ footer {
     flex-direction: column;
     align-items: center;
   }
+  .projects-row-1 {
+    flex-direction: column;
+    align-items: center;
+  }
   .proj-mediator, .proj-todoer, .proj-uptime, .proj-hitsong {
     width: 80%;
     height: 50vw;
@@ -1012,7 +1016,11 @@ font-size: 45px !important;
     flex-direction: column;
     align-items: center;
   }
-  .proj-mediator, .proj-todoer, .proj-uptime, .proj-hitsong {
+  .projects-row-1 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .proj-mediator, .proj-todoer, .proj-uptime, .proj-hitsong, .proj-onlineposlovanje, .proj-checkpointz {
     width: 80%;
     height: 50vw;
     background-position: bottom;
@@ -1207,7 +1215,11 @@ font-size: 45px !important;
     flex-direction: column;
     align-items: center;
   }
-  .proj-mediator, .proj-todoer, .proj-uptime, .proj-hitsong {
+  .projects-row-1 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .proj-mediator, .proj-todoer, .proj-uptime, .proj-hitsong, .proj-onlineposlovanje, .proj-checkpointz {
     width: 80%;
     height: 50vw;
     background-position: bottom;
@@ -1351,7 +1363,11 @@ font-size: 45px !important;
     flex-direction: column;
     align-items: center;
   }
-  .proj-mediator, .proj-todoer, .proj-uptime, .proj-hitsong {
+  .projects-row-1 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .proj-mediator, .proj-todoer, .proj-uptime, .proj-hitsong, .proj-onlineposlovanje, .proj-checkpointz {
     width: 80%;
     height: 50vw;
     background-position: bottom;
@@ -1505,7 +1521,11 @@ font-size: 45px !important;
     flex-direction: column;
     align-items: center;
   }
-  .proj-mediator, .proj-todoer, .proj-uptime, .proj-hitsong {
+  .projects-row-1 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .proj-mediator, .proj-todoer, .proj-uptime, .proj-hitsong, .proj-onlineposlovanje, .proj-checkpointz {
     width: 80%;
     height: 50vw;
     background-position: bottom;
@@ -1653,7 +1673,11 @@ font-size: 45px !important;
     flex-direction: column;
     align-items: center;
   }
-  .proj-mediator, .proj-todoer, .proj-uptime, .proj-hitsong {
+  .projects-row-1 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .proj-mediator, .proj-todoer, .proj-uptime, .proj-hitsong, .proj-onlineposlovanje, .proj-checkpointz {
     width: 80%;
     height: 50vw;
     background-position: bottom;
@@ -1835,5 +1859,26 @@ font-size: 45px !important;
   .hero-inner-text {
     margin: 0 18% 0 18%;
     border-radius: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-row {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .projects-row-1 {
+    flex-direction: column !important;
+    align-items: center !important;
+    margin-top: 1.2vh !important;
+  }
+  .proj-mediator, .proj-todoer, .proj-uptime, .proj-hitsong, .proj-onlineposlovanje, .proj-checkpointz {
+    width: 80% !important;
+    height: 50vw !important;
+    background-position: bottom !important;
+  }
+  .projects-gap {
+    display: block !important;
+    padding: 5px 0 5px 0 !important;
   }
 }
