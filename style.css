@@ -364,12 +364,26 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
 }
 .proj-mediator {
   display: flex;
   width: 23%;
   height: 20vw;
   background-image: url('img/mediatorimg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center; 
+  align-items: center;
+  text-align: center; 
+  margin: 0;
+  border: 2px solid #00458B;
+}
+.proj-bebiron {
+  display: flex;
+  width: 23%;
+  height: 20vw;
+  background-image: url('img/bebiron_screenshot.png');
   background-size: cover;
   background-repeat: no-repeat;
   justify-content: center; 
@@ -396,6 +410,19 @@ p {
   width: 23%;
   height: 20vw;
   background-image: url('img/uptimeimg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center; 
+  align-items: center;
+  text-align: center; 
+  margin: 0;
+  border: 2px solid #00458B;
+}
+.proj-vreme-sada {
+  display: flex;
+  width: 23%;
+  height: 20vw;
+  background-image: url('img/vreme-sada.png');
   background-size: cover;
   background-repeat: no-repeat;
   justify-content: center; 
@@ -1020,7 +1047,7 @@ font-size: 45px !important;
     flex-direction: column;
     align-items: center;
   }
-  .proj-mediator, .proj-todoer, .proj-uptime, .proj-hitsong, .proj-onlineposlovanje, .proj-checkpointz {
+  .proj-mediator, .proj-todoer, .proj-uptime, .proj-hitsong, .proj-onlineposlovanje, .proj-checkpointz, .proj-bebiron, .proj-vreme-sada {
     width: 80%;
     height: 50vw;
     background-position: bottom;
@@ -1219,7 +1246,7 @@ font-size: 45px !important;
     flex-direction: column;
     align-items: center;
   }
-  .proj-mediator, .proj-todoer, .proj-uptime, .proj-hitsong, .proj-onlineposlovanje, .proj-checkpointz {
+  .proj-mediator, .proj-todoer, .proj-uptime, .proj-hitsong, .proj-onlineposlovanje, .proj-checkpointz, .proj-bebiron, .proj-vreme-sada {
     width: 80%;
     height: 50vw;
     background-position: bottom;
@@ -1367,7 +1394,7 @@ font-size: 45px !important;
     flex-direction: column;
     align-items: center;
   }
-  .proj-mediator, .proj-todoer, .proj-uptime, .proj-hitsong, .proj-onlineposlovanje, .proj-checkpointz {
+  .proj-mediator, .proj-todoer, .proj-uptime, .proj-hitsong, .proj-onlineposlovanje, .proj-checkpointz, .proj-bebiron, .proj-vreme-sada {
     width: 80%;
     height: 50vw;
     background-position: bottom;
@@ -1375,7 +1402,8 @@ font-size: 45px !important;
   .proj-mediator {
     background-position: 0% 50%;
   }
-  .proj-todoer {
+  /* was todoer proj */
+  .proj-bebiron {
     background-position: 25% 20%;
   }
   .proj-uptime {
@@ -1525,7 +1553,7 @@ font-size: 45px !important;
     flex-direction: column;
     align-items: center;
   }
-  .proj-mediator, .proj-todoer, .proj-uptime, .proj-hitsong, .proj-onlineposlovanje, .proj-checkpointz {
+  .proj-mediator, .proj-todoer, .proj-uptime, .proj-hitsong, .proj-onlineposlovanje, .proj-checkpointz, .proj-bebiron, .proj-vreme-sada {
     width: 80%;
     height: 50vw;
     background-position: bottom;
@@ -1533,7 +1561,8 @@ font-size: 45px !important;
   .proj-mediator {
     background-position: 0% 50%;
   }
-  .proj-todoer {
+  /* was todoer proj */
+  .proj-bebiron {
     background-position: 25% 20%;
   }
   .proj-uptime {
@@ -1677,7 +1706,7 @@ font-size: 45px !important;
     flex-direction: column;
     align-items: center;
   }
-  .proj-mediator, .proj-todoer, .proj-uptime, .proj-hitsong, .proj-onlineposlovanje, .proj-checkpointz {
+  .proj-mediator, .proj-todoer, .proj-uptime, .proj-hitsong, .proj-onlineposlovanje, .proj-checkpointz, .proj-bebiron, .proj-vreme-sada {
     width: 80%;
     height: 50vw;
     background-position: bottom;
@@ -1685,7 +1714,8 @@ font-size: 45px !important;
   .proj-mediator {
     background-position: 0% 50%;
   }
-  .proj-todoer {
+  /* was todoer proj */
+  .proj-bebiron {
     background-position: 25% 20%;
   }
   .proj-uptime {
@@ -1872,7 +1902,7 @@ font-size: 45px !important;
     align-items: center !important;
     margin-top: 1.2vh !important;
   }
-  .proj-mediator, .proj-todoer, .proj-uptime, .proj-hitsong, .proj-onlineposlovanje, .proj-checkpointz {
+  .proj-mediator, .proj-todoer, .proj-uptime, .proj-hitsong, .proj-onlineposlovanje, .proj-checkpointz, .proj-bebiron, .proj-vreme-sada {
     width: 80% !important;
     height: 50vw !important;
     background-position: bottom !important;
